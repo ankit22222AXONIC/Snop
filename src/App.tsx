@@ -2,6 +2,7 @@ import React from 'react';
 import { LoadingScreen } from './components/LoadingScreen';
 import { SpotlightNavbar } from './components/SpotlightNavbar';
 import { SocialFlipButton } from './components/ui/social-flip-button';
+import { MobileBlocker } from './components/MobileBlocker';
 import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';
 import { InterestsSection } from './components/InterestsSection';
@@ -14,6 +15,9 @@ import { FooterSection } from './components/FooterSection';
 export const App: React.FC = () => {
   return (
     <div className="relative w-full min-h-screen bg-[#0C0C0C] text-[#D7E2EA] overflow-x-hidden font-kanit">
+      {/* Mobile Screen Blocker (Active only on screens < 768px) */}
+      <MobileBlocker />
+
       {/* 4-second animated flower loading screen */}
       <LoadingScreen duration={4000} />
 
