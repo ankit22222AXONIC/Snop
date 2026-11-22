@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Copy, Check, Monitor, ArrowUpRight, Sparkles, Eye } from 'lucide-react';
+import { Copy, Check, Monitor, Eye } from 'lucide-react';
 
 export const MobileBlocker: React.FC = () => {
   const [copied, setCopied] = useState(false);
@@ -11,7 +11,6 @@ export const MobileBlocker: React.FC = () => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2500);
     } catch {
-      // Fallback
       setCopied(true);
       setTimeout(() => setCopied(false), 2500);
     }
@@ -37,7 +36,7 @@ export const MobileBlocker: React.FC = () => {
         <div className="relative w-full aspect-[16/10] rounded-2xl overflow-hidden border border-white/15 shadow-2xl bg-black">
           <img
             src="./desktop-only-preview.jpg"
-            alt="Futuristic Workstation Preview"
+            alt="Desktop Display Only"
             className="w-full h-full object-cover scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-black/30 pointer-events-none" />
@@ -45,7 +44,7 @@ export const MobileBlocker: React.FC = () => {
           {/* Hologram Badge */}
           <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-wider text-cyan-300">
             <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-            <span>Agentic Canvas</span>
+            <span>Display Notice</span>
           </div>
         </div>
 
@@ -57,11 +56,11 @@ export const MobileBlocker: React.FC = () => {
 
         {/* Title & Description */}
         <div className="space-y-2">
-          <h1 className="text-2xl sm:text-3xl font-black text-white tracking-tight uppercase">
-            Best Viewed On Laptop or PC
+          <h1 className="text-2xl sm:text-3xl font-black text-white tracking-tight uppercase leading-snug">
+            Not Built For Phone Screens
           </h1>
           <p className="text-xs sm:text-sm text-neutral-300 font-light leading-relaxed px-1">
-            Engineered with interactive 3D simulations, multi-tier agent terminals, and high-performance canvas systems built for larger displays.
+            Please access this website on a larger display like a laptop or PC to view the full interactive experience.
           </p>
         </div>
 
@@ -80,7 +79,7 @@ export const MobileBlocker: React.FC = () => {
             ) : (
               <>
                 <Copy className="w-4 h-4" />
-                <span>Copy Link for PC</span>
+                <span>Copy Link for Laptop / PC</span>
               </>
             )}
           </button>
@@ -97,8 +96,8 @@ export const MobileBlocker: React.FC = () => {
 
         {/* Recommended Spec */}
         <div className="w-full pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-neutral-400">
-          <span>Minimum Display:</span>
-          <span className="text-neutral-200">768px (Laptop / PC)</span>
+          <span>Required Display:</span>
+          <span className="text-neutral-200">Laptop / PC (768px+)</span>
         </div>
       </div>
     </aside>
