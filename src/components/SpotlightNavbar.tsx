@@ -20,6 +20,7 @@ export function SpotlightNavbar({
         { label: "About", href: "#about" },
         { label: "Projects", href: "#projects" },
         { label: "Skills", href: "#skills" },
+        { label: "FAQ", href: "#faq" },
         { label: "Contact", href: "#contact" },
     ],
     className,
