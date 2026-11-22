@@ -5,13 +5,13 @@ import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import {
     FaGithub,
-    FaTwitter,
     FaFacebook,
     FaInstagram,
     FaLinkedin,
     FaEnvelope,
     FaDiscord,
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export interface SocialItem {
     letter: string;
@@ -31,7 +31,7 @@ export interface SocialFlipButtonProps {
 
 const defaultItems: SocialItem[] = [
     { letter: "C", icon: <FaGithub />, label: "Github", href: "https://github.com/ankit22222AXONIC" },
-    { letter: "O", icon: <FaTwitter />, label: "Twitter", href: "#" },
+    { letter: "O", icon: <FaXTwitter />, label: "X (Twitter)", href: "https://x.com/Snopoxb" },
     { letter: "N", icon: <FaLinkedin />, label: "LinkedIn", href: "#" },
     { letter: "T", icon: <FaInstagram />, label: "Instagram", href: "#" },
     { letter: "A", icon: <FaFacebook />, label: "Facebook", href: "#" },

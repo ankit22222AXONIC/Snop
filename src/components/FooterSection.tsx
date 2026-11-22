@@ -2,8 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUp } from 'lucide-react';
 import { FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const GITHUB_URL = 'https://github.com/ankit22222AXONIC';
+const X_TWITTER_URL = 'https://x.com/Snopoxb';
 
 export const FooterSection: React.FC = () => {
   const scrollToTop = () => {
@@ -58,8 +60,18 @@ export const FooterSection: React.FC = () => {
             </a>
           </div>
 
-          {/* Three Circular Social Buttons */}
+          {/* Social Buttons */}
           <div className="flex items-center justify-center gap-4 sm:gap-6 pt-2 sm:pt-4">
+            <a
+              href={X_TWITTER_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X (formerly Twitter)"
+              className="w-11 h-11 sm:w-14 sm:h-14 rounded-full border border-white/20 bg-white/5 hover:bg-white/15 flex items-center justify-center text-white text-base sm:text-xl transition-all duration-200 hover:scale-110 active:scale-95 shadow-lg backdrop-blur-sm"
+            >
+              <FaXTwitter />
+            </a>
+
             <a
               href="#"
               target="_blank"
