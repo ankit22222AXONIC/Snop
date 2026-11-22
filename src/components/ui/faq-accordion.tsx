@@ -40,10 +40,10 @@ export function FaqAccordion({
             <li
               key={index}
               className={cn(
-                "w-full relative transition-all duration-300 rounded-2xl overflow-hidden border",
+                "w-full relative transition-all duration-300 rounded-2xl overflow-hidden border backdrop-blur-md",
                 isActive
-                  ? "border-white/20 bg-neutral-900/80 shadow-[0_8px_30px_rgba(0,0,0,0.6)]"
-                  : "border-white/10 bg-white/[0.02] hover:bg-white/[0.05] hover:border-white/15"
+                  ? "border-white/25 bg-black/75 shadow-[0_12px_35px_rgba(0,0,0,0.7)]"
+                  : "border-white/10 bg-black/40 hover:bg-black/60 hover:border-white/20"
               )}
             >
               <button
