@@ -10,6 +10,7 @@ import { FeaturedProjectsSection } from './components/FeaturedProjectsSection';
 import { ExploringSection } from './components/ExploringSection';
 import { CreativeSideSection } from './components/CreativeSideSection';
 import { GithubSection } from './components/GithubSection';
+import { FaqSection } from './components/FaqSection';
 import { FooterSection } from './components/FooterSection';
 
 export const App: React.FC = () => {
@@ -54,7 +55,10 @@ export const App: React.FC = () => {
         {/* 7. GitHub Call-To-Action */}
         <GithubSection />
 
-        {/* 8. Footer */}
+        {/* 8. Frequently Asked Questions (FAQ) */}
+        <FaqSection />
+
+        {/* 9. Contact / Footer */}
         <FooterSection />
       </main>
 
